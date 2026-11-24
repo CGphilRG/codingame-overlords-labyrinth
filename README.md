@@ -1,22 +1,34 @@
+> 🇫🇷 [Version française](README_fr.md)
+
 # Overlord's Labyrinth — CodinGame Multiplayer RPG SDK Project
 
-Un puzzle multijoueur RPG tactique inspiré de **Wizardry IV: The Return of Nerdna** (invocation sur pentagrammes) et **Conan Overlord** (allocation de gemmes d'énergie entre invocation et double activation), avec bascule dynamique PixiJS entre **Mode Sprites RPG 2D** et **Mode Formes Géométriques Debug** (`ToggleModule`).
+A tactical RPG board duel inspired by **Wizardry IV: The Return of Nerdna** (summoning on Pentagrams) and **Conan Overlord** (Energy Gem allocation between summoning and double-activation), played on a **directional thin-wall labyrinth** (`0–F` hex bitmask `N=1, E=2, S=4, W=8` with edge-aware BFS) and featuring dynamic PixiJS switching between **2D RPG Sprites Mode** and **Geometric Debug Mode** (`ToggleModule`).
 
-## Commandes Rapides
-* **Viewer Web Local (`http://localhost:8888/test.html`)** :
+---
+
+## Quick Commands
+* **Local Web Viewer (`http://localhost:8888/test.html`)**:
   ```bash
   cd overlords-labyrinth-sdk
   mvn test-compile exec:java -Dexec.mainClass="Main" -Dexec.classpathScope="test"
   ```
-* **Simulation Batch (3 ligues)** :
+* **Batch Simulation (3 Leagues)**:
   ```bash
   cd overlords-labyrinth-sdk
   mvn test-compile exec:java -Dexec.mainClass="Main" -Dexec.classpathScope="test" -Dexec.args="--simulate"
   ```
+* **Switch CC0 Sprite Pack**:
+  ```bash
+  python3 scripts/apply_sprite_pack.py kenney-tiny-dungeon   # or kenney-roguelike-field / kenney-1bit-retro / legacy-dark-stone
+  ```
+
+---
 
 ## CodinGame & GitHub Links
 
-- **CodinGame Contribution**: https://www.codingame.com/contribute/view/1586818a88014df499301a39a4dbd615c75dfe
-- **Play in CodinGame IDE**: https://www.codingame.com/ide/demo/16057779640832b6c2b793a6dd8f1b789d4447d
-- **GitHub Repository**: https://github.com/CGphilRG/codingame-overlords-labyrinth
-- **6-Puzzle Showcase Hub (GitHub Pages)**: https://cgphilrg.github.io/codingame-sdk-puzzles/
+* **CodinGame Contribution**: https://www.codingame.com/contribute/view/1586818a88014df499301a39a4dbd615c75dfe
+* **Play in CodinGame IDE**: https://www.codingame.com/ide/demo/16057779640832b6c2b793a6dd8f1b789d4447d
+* **GitHub Repository**: https://github.com/CGphilRG/codingame-overlords-labyrinth
+* **6-Puzzle Showcase Hub (GitHub Pages)**: https://cgphilrg.github.io/codingame-sdk-puzzles/
+
+> **Note:** League Boss files (`config/**/Boss.java`) are kept local-only and excluded via `.gitignore`.
