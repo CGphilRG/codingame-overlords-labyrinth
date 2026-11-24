@@ -18,5 +18,5 @@ Un puzzle multijoueur RPG tactique inspiré de **Wizardry IV: The Return of Nerd
 
 - **CodinGame Contribution**: https://www.codingame.com/contribute/view/1586818a88014df499301a39a4dbd615c75dfe
 - **Play in CodinGame IDE**: https://www.codingame.com/ide/demo/16057779640832b6c2b793a6dd8f1b789d4447d
-- **GitHub Repository**: https://github.com/codingame-team/codingame-overlords-labyrinth
-- **6-Puzzle Showcase Hub (GitHub Pages)**: https://codingame-team.github.io/codingame-sdk-puzzles/
+- **GitHub Repository**: https://github.com/CGphilRG/codingame-overlords-labyrinth
+- **6-Puzzle Showcase Hub (GitHub Pages)**: https://cgphilrg.github.io/codingame-sdk-puzzles/
